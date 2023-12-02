@@ -3,8 +3,8 @@ function generatePassword() {
     var name = document.getElementById("password-name").value;
     var password = "";
     var characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&_";
-    characters.length = 15;
-    for (var i = 0; i < 20; i++) {
+    characters.length = 500;
+    for (var i = 0; i < 500; i++) {
         password += characters.charAt(Math.floor(Math.random() * characters.length));
     }
 
